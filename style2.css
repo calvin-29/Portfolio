@@ -1,0 +1,147 @@
+/* Code for general */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: poppins, sans-serif;
+    box-sizing: border-box;
+    color: white;
+    --col1 : rgb(255, 0, 79);
+    --col2 : rgb(38, 38, 38)
+}
+.icon1{
+    font-size: 43px;
+    margin-bottom: 40px;
+}
+body{background-color: black}
+.section{
+    display: flex;
+    margin-left: 160px;
+    padding-top: 100px;
+}
+label{color: var(--col1);}
+@keyframes link{
+    from{
+        border-bottom: 2px solid var(--col1);width: 0px;
+    }
+    to{
+        border-bottom: 2px solid var(--col1);width: 30px;
+    }
+}
+/* .animation_link{height:27px;} */
+.animation_link:hover legend{animation: link 1s;}
+/* Code for a elements with a similar styling */
+div#service, div#work{display: block;font-size: 60px;}
+div#service div#services, div#work div#works{
+    display: flex;
+    font-size: 13px;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+/* Code for navigation bar */
+nav#nav{padding-top: 10px;}
+nav#nav ul{padding-top: 20px;margin-left: 500px;display: flex;}
+nav#nav ul a{
+    margin-right: 30px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Code for home page */
+div#home{padding-top: 20px}
+div#home p #title{font-size: 33px; color: white;}
+div#home p{
+    margin-top: 220px;
+    width: 800px;
+    font-size: 45px;
+}
+
+/* Code for about section */
+div#about{gap: 50px;}
+div#about img{border-radius: 20px;}
+div#about div #title2{font-size: 60px; color: white;}
+div#about div{width: 600px;}
+div#about div#resume{display: flex;gap: 50px}
+div#about #experience, div#about #education{display: none;}
+
+/* Code for service section */
+div#service div#services legend{font-size: 30px;margin-bottom: 20px;}
+#web, #ui, #app{
+    padding: 50px;
+    background-color: var(--col2);
+    width: 310px;
+    border-radius: 10px;
+    transition: all ease-in 0.5s;
+}
+#web:hover, #ui:hover, #app:hover{
+    background-color: var(--col1);
+    transform: translateY(-10px);
+}
+
+/* Code for work section */
+.work_img{border-radius: 10px;}
+.work{position: relative;}
+.work div{
+    display: none;
+    position: absolute;
+    top: 0px;
+    text-align: center;
+    padding-top: 130px;
+    height: 410px;
+    width: 330px;
+    border-radius: 10px;
+    font-size: 17px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+@keyframes slideInTop{
+    0%{
+        transform: translateY(50px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    100%{
+        background-image: linear-gradient(0deg, var(--col1), rgba(255, 0, 79, 0));
+    }
+}
+.work:hover div{animation: slideInTop 0.7s ease-out 0s 1 both; display: block;}
+
+/* Code for contact section */
+div#contact{gap: 50px}
+div#contact div label{
+    font-size: 60px;
+    font-weight: 700;
+    color: white;
+}
+div#contact div#one, div#contact div#two{width: 400px;margin-top: 20px;}
+div#contact div button{
+    background-color: var(--col1);
+    border-radius: 10px;
+    border: 1px solid var(--col1);
+    padding: 15px;
+    width: 180px;
+    font-size: 15px;
+    margin-top: 20px;
+}
+div#contact div form input, textarea{
+    padding: 15px;
+    width: 600px;
+    background-color: var(--col2);
+    border: 1px;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+div#contact div#one div#icons{
+    display: flex;
+    font-size: 30px;
+    gap: 20px;
+}
+footer{
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    background-color: var(--col2);
+}
