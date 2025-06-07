@@ -9,8 +9,22 @@
     --col2 : rgb(38, 38, 38)
 }
 .icon1{
-    font-size: 43px;
+    width: 60px;
+    height: 60px;
     margin-bottom: 40px;
+}
+.icon2{
+    width: 25px;
+    height: 27px;
+    margin-right: 20px;
+}
+.icon3{
+    width: 27px;
+    height: 30px;
+    border-radius: 5px;
+}
+.small{
+    width: 34px;
 }
 body{background-color: black}
 .section{
@@ -27,8 +41,8 @@ label{color: var(--col1);}
         border-bottom: 2px solid var(--col1);width: 30px;
     }
 }
-/* .animation_link{height:27px;} */
 .animation_link:hover legend{animation: link 1s;}
+
 /* Code for a elements with a similar styling */
 div#service, div#work{display: block;font-size: 60px;}
 div#service div#services, div#work div#works{
